@@ -1,16 +1,31 @@
+/* removendo o style */
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
 html{
     font-family: Georgia;
     background-color: rgb(107, 123, 192)
 }
 
+h2{
+    text-transform: uppercase;
+}
+
+p{
+    margin-bottom: 15px;
+}
 
 .container{
     font-size: 20px;
     text-align: justify;
-    max-width: 1100px;
+    max-width: 85%;
     background-color: #8390da;
     margin: 50px auto;
-    padding: 50px 20px;
+    padding: 5rem 6rem;
 
 }
 
@@ -18,14 +33,14 @@ html{
 .img-title{
     background-image: url("../img/und-capa.jpg");
     padding: 0px;
-    width: 1240px;
+    width: 100%;
     height: 500px;
     background-size: cover;
     background-position: center;
 }
 
 .bridge{
-    padding-top: 20px;
+    padding: 20px 0;
 }
 
 
@@ -37,26 +52,29 @@ html{
 
 
 .flowey,
-.image-side{
+.image-side1{
     /*display: flex;*/
     display: inline-block;
-
-   /* right: 10;
-    display: inline-block;
-    position: relative;
-    left: 900px;*/
+    max-width: 750px;
+    text-align:justify;
 }
+
+.image-side2{
+    /*display: flex;*/
+    display: inline-block;
+    max-width: 750px;
+    text-align:justify;
+}
+
 
 .flowey{
     position: absolute;
-    right: 90px;
-    top: 900px;
+    right: 190px;
 }
 
-
-.image-side{
-    max-width: 750px;
-    text-align:justify;
+#flowey{
+    height: 200px;
+    width: 200px;
 }
 
 
@@ -64,17 +82,18 @@ html{
     padding-top: 50px;
     text-align: center;
     font-size: 15px;
+    margin-bottom: 5rem;
 }
 
 
 
-.continuing{
+/*.continuing{
     padding: 50px 20px;
 }
-
+*/
 .quotes-container{
     padding: 50px;
-    margin: 10px;
+    margin: 5rem 2rem;
     border: 2px dashed blue;
 }
 
@@ -82,6 +101,7 @@ html{
     text-align: justify;
     font-size: 30px;
     font-weight: 700;
+    margin-bottom: 2rem;
 }
 
 .quotes-container p{
@@ -95,22 +115,120 @@ html{
 
 .curiosities-container li{
     height: 50px;
+    margin: 5px 0;
 }
 
-
-
-h2{
-    text-transform: uppercase;
+.curiosities-container h2{
+    margin-bottom: 2rem;
 }
-
 
 .moreinfo li{
     height: 50px;
 }
 
+.moreinfo h2{
+    margin-bottom: 2rem;
+}
 
 a{
     color: #06177a;
     text-decoration: none;
     font-weight: 600;
+}
+
+/* reatividade */
+
+/* notebooks pequenos */
+@media (max-width: 1100px){
+
+    .texto .image-side1{
+        padding: 0 8rem 0 0;
+    }
+
+    #flowey{
+        height: 150px;
+        width: 150px;
+    }
+
+    .flowey{
+        right: 140px;
+    }
+}
+
+
+/* tablet */
+@media (max-width: 900px){
+    
+    .toriel-livingroom img{
+        height: 375px;
+        width: 500px;
+        padding-right: 2rem;
+    }
+
+    .flowey{
+        right: 120px;
+        top: 1075px;
+    }
+
+    .quotes-container blockquote{
+        font-size: 24px;
+        text-align: left;
+        padding-left: 2rem;
+    }
+
+    .curiosities-container li{
+        margin-bottom: 20px;
+    }
+
+}
+
+
+/* celular */
+@media (max-width: 576px){
+
+    .img-title{
+        height: 200px;
+    }
+
+    .container{
+        width: 80%;
+        padding: 2rem;
+        font-size: 15px;
+ 
+    }
+
+
+    .toriel-livingroom img{
+        width: 300px;
+        height: 225px;
+    }
+
+
+    #flowey{
+        height: 100px;
+        width: 100px;
+    }
+
+    .flowey{
+        top: 850px;
+        right: 60px;
+    }
+
+    .image-side1{
+        padding: 0 !important;
+        margin: 0 0 15px 0;
+    }
+
+    .image-side2{
+        padding-right: 5rem;
+    }
+
+    .quotes-container{
+        padding: 5rem 2rem 2rem;
+    }
+
+    .quotes-container blockquote{
+        font-size: 20px;
+    }
+
 }
