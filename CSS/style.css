@@ -198,6 +198,11 @@ a{
     }
 
 
+    .toriel-livingroom{
+        margin-bottom: 3rem;
+        padding-top 2rem;
+    }
+
     .toriel-livingroom img{
         width: 300px;
         height: 225px;
@@ -210,8 +215,8 @@ a{
     }
 
     .flowey{
-        top: 850px;
-        right: 60px;
+        top: 1100px;
+        right: 47px;
     }
 
     .image-side1{
@@ -224,11 +229,21 @@ a{
     }
 
     .quotes-container{
-        padding: 5rem 2rem 2rem;
+        padding: 5rem 1rem 2rem;
+        width: 100%;
+        margin: 20px auto;
     }
 
     .quotes-container blockquote{
         font-size: 20px;
+        padding-right: 1rem;
+        text-align: center;
     }
+
+    .moreinfo{
+        text-align: left;
+    }
+
+
 
 }
